@@ -1,1 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>李云攀｜个人学术主页</title>
+
+    <meta name="description"
+          content="李云攀的个人学术主页，研究方向包括有机光热聚合物、界面太阳能蒸发和资源回收。">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            color: #263238;
+            background: #f5f7fa;
+            font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+            line-height: 1.8;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 14px 8%;
+            background: rgba(18, 44, 70, 0.96);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        nav a {
+            margin-right: 24px;
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #8ed1fc;
+        }
+
+        header {
+            padding: 80px 8%;
+            color: white;
+            background: linear-gradient(135deg, #0d3557, #147d92);
+        }
+
+        .header-container {
+            display: flex;
+            max-width: 1100px;
+            margin: auto;
+            align-items: center;
+            gap: 45px;
+        }
+
+        .profile {
+            width: 170px;
+            height: 210px;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.85);
+            border-radius: 16px;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            font-size: 42px;
+        }
+
+        header h2 {
+            margin: 0 0 16px;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        header p {
+            max-width: 700px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px 12px 0 0;
+            padding: 10px 20px;
+            color: #12344d;
+            background: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #dff5ff;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px 70px;
+        }
+
+        section {
+            margin-top: 28px;
+            padding: 32px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 14px rgba(30, 60, 80, 0.08);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #0d5264;
+            border-bottom: 2px solid #e3eef2;
+            padding-bottom: 10px;
+        }
+
+        .project {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f5fafb;
+            border-left: 4px solid #16869a;
+            border-radius: 6px;
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #164e63;
+        }
+
+        .keywords span {
+            display: inline-block;
+            margin: 5px 5px 5px 0;
+            padding: 5px 12px;
+            color: #0f5666;
+            background: #e2f3f6;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            padding: 28px;
+            color: #d6e4eb;
+            background: #122c46;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 12px 20px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 12px 5px 0;
+            }
+
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">个人简介</a>
+    <a href="#education">教育经历</a>
+    <a href="#research">研究方向</a>
+    <a href="#projects">科研项目</a>
+    <a href="#publications">科研成果</a>
+    <a href="#contact">联系方式</a>
+</nav>
+
+<header>
+    <div class="header-container">
+        <img class="profile" src="profile.jpg" alt="李云攀个人照片">
+
+        <div>
+            <h1>李云攀</h1>
+            <h2>材料科学与工程专业硕士研究生</h2>
+
+            <p>
+                研究方向：有机光热聚合物、非辐射能量耗散、
+                界面太阳能蒸发、热电转换与铀资源回收。
+            </p>
+
+            <a class="button" href="CV.pdf" target="_blank">查看个人简历</a>
+            <a class="button" href="mailto:你的邮箱">发送邮件</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section id="about">
+        <h2>个人简介</h2>
+
+        <p>
+            我目前就读于贵州大学材料与冶金学院材料科学与工程专业，
+            主要围绕DKPDO基有机光热聚合物的分子结构调控、
+            激发态非辐射衰减及界面功能开展研究。
+        </p>
+
+        <p>
+            当前研究重点是构建兼具太阳能吸收、界面水蒸发、
+            电能输出和铀酰离子捕获能力的纸基多功能光热器件。
+        </p>
+
+        <div class="keywords">
+            <span>有机光热材料</span>
+            <span>共轭聚合物</span>
+            <span>太阳能蒸发</span>
+            <span>非辐射弛豫</span>
+            <span>铀资源回收</span>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>教育经历</h2>
+
+        <h3>贵州大学</h3>
+        <p>
+            材料与冶金学院｜材料科学与工程专业｜硕士研究生<br>
+            预计毕业时间：2027年6月
+        </p>
+
+        <h3>本科院校名称</h3>
+        <p>
+            本科专业｜20XX年9月—20XX年6月
+        </p>
+    </section>
+
+    <section id="research">
+        <h2>研究方向</h2>
+
+        <ul>
+            <li>DKPDO基有机光热聚合物的分子结构设计</li>
+            <li>聚合物主链共轭中断与非辐射能量耗散机制</li>
+            <li>侧链空间位阻对聚集态结构和光热性能的影响</li>
+            <li>聚合诱导互变异构及主链羟基功能化</li>
+            <li>光热蒸发、热电输出与铀酰离子捕获</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>代表性科研项目</h2>
+
+        <div class="project">
+            <h3>01 DKPDO基聚合物的主链结构调控</h3>
+            <p>
+                通过比较不同主链结构对光吸收、激发态动力学和
+                非辐射耗散行为的影响，研究局部共轭中断与光热性能之间的关系。
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>02 侧链空间位阻与聚集态调控</h3>
+            <p>
+                通过改变侧链支化结构和空间位阻，分析分子堆积、
+                构象运动及热耗散能力的变化，建立结构—聚集态—光热性能关系。
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>03 多功能纸基光热界面器件</h3>
+            <p>
+                将光热聚合物负载于纤维素纸基底，构建集水生产、
+                电能输出和铀资源捕获于一体的界面太阳能利用平台。
+            </p>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>科研成果</h2>
+
+        <ol>
+            <li>
+                作者. 论文题目. <em>期刊名称</em>, 年份, 卷(期), 页码.
+            </li>
+            <li>
+                作者. 会议报告或专利名称. 年份.
+            </li>
+        </ol>
+
+        <p>
+            如果论文尚未正式发表，可以写“Manuscript in preparation”，
+            但不要把尚未投稿的工作写成已发表成果。
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>联系方式</h2>
+
+        <p>
+            所在单位：贵州大学材料与冶金学院<br>
+            电子邮箱：你的邮箱<br>
+            ORCID：你的ORCID链接<br>
+            Google Scholar：你的学术主页链接
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 李云攀｜Last updated: November 2026
+</footer>
+
+</body>
+</html>
